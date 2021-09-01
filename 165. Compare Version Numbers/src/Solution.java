@@ -37,8 +37,17 @@ public class Solution {
                 return 1;
             if(temp1 < temp2)
                 return -1;
+
             version1 = version1.substring(index1 + 1);
-            if(Integer.parseInt(version1) > 0)
+            index1 = version1.indexOf(".");
+
+            if(index1 != -1)
+            {
+                version1.replace("0", "");
+                version1.replace(".", "");
+            }
+
+            if (Integer.parseInt(version1) > 0)
                 return 1;
             else
                 return 0;
@@ -51,8 +60,17 @@ public class Solution {
                 return 1;
             if(temp1 < temp2)
                 return -1;
+
             version2 = version2.substring(index2 + 1);
-            if(Integer.parseInt(version2) > 0)
+            index2 = version2.indexOf(".");
+
+            if(index2 != -1)
+            {
+                version2.replace("0", "");
+                version2.replace(".", "");
+            }
+
+            if (Integer.parseInt(version2) > 0)
                 return -1;
             else
                 return 0;
