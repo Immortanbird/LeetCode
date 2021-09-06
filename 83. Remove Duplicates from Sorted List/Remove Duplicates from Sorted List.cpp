@@ -25,6 +25,9 @@ class Solution
 public:
     ListNode *deleteDuplicates(ListNode *head)
     {
+        if(head == nullptr)
+            return head;
+            
         ListNode *p = head->next;
         ListNode *current = head;
 
