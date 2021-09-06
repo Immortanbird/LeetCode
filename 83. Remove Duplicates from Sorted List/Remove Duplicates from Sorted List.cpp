@@ -25,10 +25,24 @@ class Solution
 public:
     ListNode *deleteDuplicates(ListNode *head)
     {
-        ListNode *p = head;
-        while (p->next->val == p->val)
+        ListNode *p = head->next;
+        ListNode *current = head;
+
+        while (p)
         {
-            if (p->val )
+            if (p->val == current->val)
+            {
+                current->next = p->next;
+                delete p;
+                p = current->next;
+            }
+            else
+            {
+                current = p;
+                p = p->next;
+            }
         }
+
+        return head;
     }
 };
