@@ -1,4 +1,5 @@
 *.exe
-.vscode/*
-*.xml
-.idea/*
+.vscode/
+*.iml
+.idea/
+out/
