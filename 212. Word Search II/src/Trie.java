@@ -1,7 +1,7 @@
 class Trie {
-    private String word;
-    private boolean isEnd;
-    private final Trie[] next;
+    String word;
+    boolean isEnd;
+    final Trie[] next;
 
     /** Initialize your data structure here. */
     public Trie() {
