@@ -10,7 +10,7 @@
 
 class Trie {
     private boolean isEnd;
-    private Trie[] next;
+    private final Trie[] next;
 
     /** Initialize your data structure here. */
     public Trie() {
