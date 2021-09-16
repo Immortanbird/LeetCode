@@ -20,7 +20,6 @@ class Trie {
 
     /** Inserts a word into the trie. */
     public void insert(String word) {
-        isEnd = false;
         Trie temp = this;
 
         for (int i=0; i<word.length(); i++) {
