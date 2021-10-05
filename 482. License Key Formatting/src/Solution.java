@@ -7,9 +7,6 @@
 * */
 
 class Solution {
-    public static void main(String[] main) {
-        System.out.println(Solution.licenseKeyFormatting("5F3Z-2e-9-w", 4));
-    }
     public static String licenseKeyFormatting(String s, int k) {
         StringBuilder builder = new StringBuilder();
 
